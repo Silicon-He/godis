@@ -1,0 +1,5 @@
+[logger]
+path="logs"
+name="godis"
+ext="log"
+time-format="2006-01-02"

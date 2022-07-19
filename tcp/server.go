@@ -48,7 +48,7 @@ func ListenAndServe(listener net.Listener, handler tcp.Handler, closeChan <-chan
 		_ = handler.Close()
 	}()
 	ctx := context.Background()
-	var wg *wait.Wait
+	var wg wait.Wait
 	// clean connect
 	defer func() {
 		_ = listener.Close()

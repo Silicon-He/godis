@@ -14,10 +14,10 @@ import (
 )
 
 type Settings struct {
-	Path       string `yaml:"path"`
-	Name       string `yaml:"name"`
-	Ext        string `yaml:"ext"`
-	TimeFormat string `yaml:"time-format"`
+	Path       string `toml:"path"`
+	Name       string `toml:"name"`
+	Ext        string `toml:"ext"`
+	TimeFormat string `toml:"time-format"`
 }
 
 var (
