@@ -40,6 +40,7 @@ func ListenAndServeWithSignal(cfg *Config, handler tcp.Handler) (err error) {
 }
 
 func ListenAndServe(listener net.Listener, handler tcp.Handler, closeChan <-chan struct{}) {
+	// when closed
 	go func() {
 		<-closeChan
 		logger.Info("shutting down listener...")
