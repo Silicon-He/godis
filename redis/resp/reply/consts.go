@@ -49,7 +49,7 @@ func NewNullBulkReply() *NullBulkReply {
 	return &NullBulkReply{}
 }
 
-// EmptyMultiBulkReply reply an empty multi bulk (数组)
+// EmptyMultiBulkReply reply an empty multi-bulk string (array)
 type EmptyMultiBulkReply struct{}
 
 var emptyMultiBulkBytes = []byte("*0\r\n")

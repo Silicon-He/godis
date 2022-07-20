@@ -8,3 +8,7 @@ An imitation and reconstruction of  [godis](https://github.com/HDT3213/godis)
 - Implement the echo server
 - Change the configuration file to TOML format
 - Encapsulate error replies and constant replies
+
+2022/7/10
+- Encapsulate parser
+- Implement the multi-bulk / bulk string parser
